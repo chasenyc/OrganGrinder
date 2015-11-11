@@ -29,15 +29,21 @@
   KeyStore.addKey = function(char){
     if(_currKeys.indexOf(char) === -1){
       _currKeys.push(char);
+      KeyStore.changed();
     }
+    console.log(_currKeys);
   };
 
   KeyStore.removeKey = function (char) {
     var idx = _currKeys.indexOf(char);
     if (idx >= 0) {
       _currKeys.splice(idx, 1);
+      KeyStore.changed();
     }
   };
 
+  KeyStore.all = function () {
+    return _currKeys.slice();
+  };
 
 })();
