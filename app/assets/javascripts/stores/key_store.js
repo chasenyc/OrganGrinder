@@ -31,7 +31,6 @@
       _currKeys.push(char);
       KeyStore.changed();
     }
-    console.log(_currKeys);
   };
 
   KeyStore.removeKey = function (char) {

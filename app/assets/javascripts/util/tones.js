@@ -7,6 +7,5 @@ var TONES = window.TONES = {
   "G":700,
   "A":750,
   "B":800,
-  length: 7
 
 };
