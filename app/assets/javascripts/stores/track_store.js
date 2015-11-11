@@ -27,7 +27,18 @@
   TrackStore.addTrack = function (track) {
     _tracks.push(track);
     TrackStore.changed();
-    console.log(_tracks);
+  };
+
+  TrackStore.removeTrack = function (track) {
+    var idx = _tracks.indexOf(track);
+    if (idx >= 0) {
+      _tracks.splice(idx,1);
+      TrackStore.changed();
+    }
+  };
+
+  TrackStore.all = function(){
+    return _tracks.slice();
   };
 
 })();

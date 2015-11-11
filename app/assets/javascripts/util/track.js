@@ -17,7 +17,6 @@
   Track.prototype.addNotes = function (notes) {
     var currTime = new Date ();
     var startTime = this.startTime;
-    console.log(this, this.startTime);
     this.roll.push({
       timeSlice: (currTime - startTime),
       notes: notes

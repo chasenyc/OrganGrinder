@@ -50,6 +50,7 @@ var Recorder = React.createClass({
         <button onClick={this.saveRecording}>Save</button>
           <input type="text" onChange={this.trackNameChanged}
                  value={this.state.trackName}/>
+        <Jukebox />
       </div>
     );
   }
