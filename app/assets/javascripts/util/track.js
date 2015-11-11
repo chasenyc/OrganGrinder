@@ -17,11 +17,15 @@
   Track.prototype.addNotes = function (notes) {
     var currTime = new Date ();
     var startTime = this.startTime;
-
+    console.log(this, this.startTime);
     this.roll.push({
       timeSlice: (currTime - startTime),
       notes: notes
     });
+  };
+
+  Track.prototype.setName = function (name) {
+    this.name = name;
   };
 
   Track.prototype.play = function(){
@@ -40,7 +44,6 @@
         this.roll[i].notes.forEach(function(note){
         KeyActions.addKey(note);
       });
-        console.log(i);
         i++;
       }
     };
