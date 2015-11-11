@@ -41,6 +41,10 @@
     }
   };
 
+  KeyStore.setKeys = function(){
+
+  };
+
   KeyStore.all = function () {
     return _currKeys.slice();
   };

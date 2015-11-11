@@ -1,6 +1,6 @@
 var Key = React.createClass({
   getInitialState: function(){
-    return {note: new Note(TONES[this.props.noteName]), playing: false };
+    return {note: new Note(TONES[NOTES[this.props.noteName]]), playing: false };
   },
 
   componentDidMount: function () {
@@ -9,6 +9,7 @@ var Key = React.createClass({
 
   startPlaying: function(){
     var keys = KeyStore.all();
+    // debugger;
     var idx = keys.indexOf(this.props.noteName);
     if (idx >= 0) {
       this.state.note.start();
