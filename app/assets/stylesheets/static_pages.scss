@@ -20,6 +20,7 @@ body{
   width: 350px;
   height: 200px;
   background: lightgrey;
+  margin: auto;
 }
 
 .key{
@@ -32,4 +33,20 @@ body{
 
 .playing {
   background: red;
+}
+
+.recorder {
+  background: lightgreen;
+
+}
+
+.jukebox {
+  border: 1px solid black;
+  background: lightgrey;
+  height: 200px;
+}
+
+.jukebox-track-player {
+  padding: 20px;
+  background: lightblue;
 }

@@ -41,15 +41,15 @@ var Recorder = React.createClass({
   render: function () {
     var track = this.state.track;
     return (
-      <div className="jukebox">
+      <div className='total'>
         <div className="recorder">
           <button onClick={this.startRecording}>Start</button>
           <button onClick={this.stopRecording}>Stop</button>
-        </div>
         <button onClick={this.playRecording}>Play</button>
         <button onClick={this.saveRecording}>Save</button>
           <input type="text" onChange={this.trackNameChanged}
                  value={this.state.trackName}/>
+        </div>
         <Jukebox />
       </div>
     );
