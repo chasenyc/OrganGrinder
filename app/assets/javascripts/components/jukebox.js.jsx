@@ -14,10 +14,13 @@ var Jukebox = React.createClass({
 
   render: function(){
     var tracks = TrackStore.all();
-    return <div className='jukebox'>{tracks.map(function(track){
-      return <TrackPlayer track={track} />;
-
-    })}</div>;
+    return <div className='jukebox'>
+            <ul>
+              {tracks.map(function(track){
+                return <TrackPlayer track={track} />;
+              })}
+            </ul>
+          </div>;
 
   }
 

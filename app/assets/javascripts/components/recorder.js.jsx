@@ -42,7 +42,7 @@ var Recorder = React.createClass({
     var track = this.state.track;
     return (
       <div className='total'>
-        <div className="recorder">
+        <div className="recorder-buttons">
           <button onClick={this.startRecording}>Start</button>
           <button onClick={this.stopRecording}>Stop</button>
         <button onClick={this.playRecording}>Play</button>

@@ -12,7 +12,7 @@
   };
 
   Note.prototype.start = function () {
-    this.gainNode.gain.value = 0.3;
+    this.gainNode.gain.value = 1;
   };
   Note.prototype.stop = function () {
     this.gainNode.gain.value = 0;
@@ -20,9 +20,9 @@
 
   var createOscillator = function (freq) {
     var osc = ctx.createOscillator();
-    osc.type = "sine";
+    osc.type = 'sine';
     osc.frequency.value = freq;
-    osc.detune.value = 0;
+    osc.detune.value = 1;
     osc.start(ctx.currentTime);
     return osc;
   };

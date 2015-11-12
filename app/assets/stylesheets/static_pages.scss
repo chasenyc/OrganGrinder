@@ -2,25 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body, div {
+body, div, ul {
   font: inherit;
   text-decoration: none;
+
+
   margin: 0px;
   padding: 0px;
   border: 0px;
+
   background: transparent;
 
+}
+
+ul, li {
+  list-style-type: none;
 }
 
 body{
   font-family: sans-serif;
 }
 
-.organ{
+button {
+  background: lightgray;
+  margin-right: 5px;
+}
+
+.organ-grinder {
+  margin: auto;
   width: 350px;
+}
+
+.organ{
   height: 200px;
   background: lightgrey;
-  margin: auto;
 }
 
 .key{
@@ -37,6 +52,15 @@ body{
 
 .recorder {
   background: lightgreen;
+  height: 50px;
+}
+
+.recorder-buttons {
+  padding: 10px;
+  margin: auto;
+}
+
+.recorder-buttons > button {
 
 }
 

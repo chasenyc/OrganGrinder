@@ -11,7 +11,7 @@ var TrackPlayer = React.createClass({
   render: function(){
 
     return <div className='jukebox-track-player'>
-            <li>{this.props.track.name}
+            <li>{this.props.track.name} 
             <button onClick={this.playTrack}>Play</button>
             <button onClick={this.deleteTrack}>Delete</button>
             </li>
